@@ -1,0 +1,161 @@
+public class test1.Aristotle extends akka.actor.AbstractActor
+{
+
+    public static akka.actor.Props props()
+    {
+        akka.japi.Creator $r0;
+        akka.actor.Props $r1;
+
+        $r0 = staticinvoke <test1.Aristotle$lambda_props_ac7cc815_1__19: akka.japi.Creator bootstrap$()>();
+
+        $r1 = staticinvoke <akka.actor.Props: akka.actor.Props create(java.lang.Class,akka.japi.Creator)>(class "Ltest1/Aristotle;", $r0);
+
+        return $r1;
+    }
+
+    public void <init>()
+    {
+        test1.Aristotle r0;
+
+        r0 := @this: test1.Aristotle;
+
+        specialinvoke r0.<akka.actor.AbstractActor: void <init>()>();
+
+        return;
+    }
+
+    public akka.actor.AbstractActor$Receive createReceive()
+    {
+        test1.Aristotle r0;
+        akka.japi.pf.ReceiveBuilder $r1, $r3;
+        akka.japi.pf.FI$UnitApply $r2;
+        akka.actor.AbstractActor$Receive $r4;
+
+        r0 := @this: test1.Aristotle;
+
+        $r1 = virtualinvoke r0.<test1.Aristotle: akka.japi.pf.ReceiveBuilder receiveBuilder()>();
+
+        $r2 = staticinvoke <test1.Aristotle$lambda_createReceive_0__20: akka.japi.pf.FI$UnitApply bootstrap$(test1.Aristotle)>(r0);
+
+        $r3 = virtualinvoke $r1.<akka.japi.pf.ReceiveBuilder: akka.japi.pf.ReceiveBuilder match(java.lang.Class,akka.japi.pf.FI$UnitApply)>(class "Ltest1/Beethoven$Beethoven_msg;", $r2);
+
+        $r4 = virtualinvoke $r3.<akka.japi.pf.ReceiveBuilder: akka.actor.AbstractActor$Receive build()>();
+
+        return $r4;
+    }
+
+    private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda)
+    {
+        java.lang.invoke.SerializedLambda r0;
+        java.lang.String r1, $r2, $r3, $r4, $r5, $r6;
+        int $i0, $i1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        akka.japi.Creator $r7;
+        byte b2;
+        java.lang.IllegalArgumentException $r8;
+
+        r0 := @parameter0: java.lang.invoke.SerializedLambda;
+
+        r1 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: java.lang.String getImplMethodName()>();
+
+        b2 = -1;
+
+        $i0 = virtualinvoke r1.<java.lang.String: int hashCode()>();
+
+        lookupswitch($i0)
+        {
+            case 841970309: goto label1;
+            default: goto label2;
+        };
+
+     label1:
+        $z0 = virtualinvoke r1.<java.lang.String: boolean equals(java.lang.Object)>("lambda$props$ac7cc815$1");
+
+        if $z0 == 0 goto label2;
+
+        b2 = 0;
+
+     label2:
+        lookupswitch(b2)
+        {
+            case 0: goto label3;
+            default: goto label4;
+        };
+
+     label3:
+        $i1 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: int getImplMethodKind()>();
+
+        if $i1 != 6 goto label4;
+
+        $r2 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: java.lang.String getFunctionalInterfaceClass()>();
+
+        $z1 = virtualinvoke $r2.<java.lang.Object: boolean equals(java.lang.Object)>("akka/japi/Creator");
+
+        if $z1 == 0 goto label4;
+
+        $r3 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: java.lang.String getFunctionalInterfaceMethodName()>();
+
+        $z2 = virtualinvoke $r3.<java.lang.Object: boolean equals(java.lang.Object)>("create");
+
+        if $z2 == 0 goto label4;
+
+        $r4 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: java.lang.String getFunctionalInterfaceMethodSignature()>();
+
+        $z3 = virtualinvoke $r4.<java.lang.Object: boolean equals(java.lang.Object)>("()Ljava/lang/Object;");
+
+        if $z3 == 0 goto label4;
+
+        $r5 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: java.lang.String getImplClass()>();
+
+        $z4 = virtualinvoke $r5.<java.lang.Object: boolean equals(java.lang.Object)>("test1/Aristotle");
+
+        if $z4 == 0 goto label4;
+
+        $r6 = virtualinvoke r0.<java.lang.invoke.SerializedLambda: java.lang.String getImplMethodSignature()>();
+
+        $z5 = virtualinvoke $r6.<java.lang.Object: boolean equals(java.lang.Object)>("()Ltest1/Aristotle;");
+
+        if $z5 == 0 goto label4;
+
+        $r7 = staticinvoke <test1.Aristotle$lambda_props_ac7cc815_1__21: akka.japi.Creator bootstrap$()>();
+
+        return $r7;
+
+     label4:
+        $r8 = new java.lang.IllegalArgumentException;
+
+        specialinvoke $r8.<java.lang.IllegalArgumentException: void <init>(java.lang.String)>("Invalid lambda deserialization");
+
+        throw $r8;
+    }
+
+    public void lambda$createReceive$0(test1.Beethoven$Beethoven_msg) throws java.lang.Exception
+    {
+        test1.Aristotle r0;
+        test1.Beethoven$Beethoven_msg r1;
+        akka.actor.ActorRef $r2, $r3;
+
+        r0 := @this: test1.Aristotle;
+
+        r1 := @parameter0: test1.Beethoven$Beethoven_msg;
+
+        $r2 = virtualinvoke r0.<test1.Aristotle: akka.actor.ActorRef sender()>();
+
+        $r3 = virtualinvoke r0.<test1.Aristotle: akka.actor.ActorRef getSelf()>();
+
+        virtualinvoke $r2.<akka.actor.ActorRef: void tell(java.lang.Object,akka.actor.ActorRef)>("ok", $r3);
+
+        return;
+    }
+
+    public static test1.Aristotle lambda$props$ac7cc815$1() throws java.lang.Exception
+    {
+        test1.Aristotle $r0;
+
+        $r0 = new test1.Aristotle;
+
+        specialinvoke $r0.<test1.Aristotle: void <init>()>();
+
+        return $r0;
+    }
+}

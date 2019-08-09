@@ -1,0 +1,54 @@
+public final class test1.Beethoven$lambda_createReceive_1__11 extends java.lang.Object implements akka.japi.pf.FI$UnitApply
+{
+    test1.Beethoven cap0;
+
+    public static akka.japi.pf.FI$UnitApply bootstrap$(test1.Beethoven)
+    {
+        test1.Beethoven $r0;
+        test1.Beethoven$lambda_createReceive_1__11 $r1;
+
+        $r0 := @parameter0: test1.Beethoven;
+
+        $r1 = new test1.Beethoven$lambda_createReceive_1__11;
+
+        specialinvoke $r1.<test1.Beethoven$lambda_createReceive_1__11: void <init>(test1.Beethoven)>($r0);
+
+        return $r1;
+    }
+
+    public void <init>(test1.Beethoven)
+    {
+        test1.Beethoven$lambda_createReceive_1__11 $r0;
+        test1.Beethoven $r1;
+
+        $r0 := @this: test1.Beethoven$lambda_createReceive_1__11;
+
+        $r1 := @parameter0: test1.Beethoven;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<test1.Beethoven$lambda_createReceive_1__11: test1.Beethoven cap0> = $r1;
+
+        return;
+    }
+
+    public void apply(java.lang.Object)
+    {
+        test1.Beethoven$lambda_createReceive_1__11 $r0;
+        java.lang.Object $r1;
+        test1.Einstein$Einstein_msg $r2;
+        test1.Beethoven $r3;
+
+        $r0 := @this: test1.Beethoven$lambda_createReceive_1__11;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (test1.Einstein$Einstein_msg) $r1;
+
+        $r3 = $r0.<test1.Beethoven$lambda_createReceive_1__11: test1.Beethoven cap0>;
+
+        virtualinvoke $r3.<test1.Beethoven: void lambda$createReceive$1(test1.Einstein$Einstein_msg)>($r2);
+
+        return;
+    }
+}

@@ -1,0 +1,54 @@
+public final class test1.Einstein$lambda_createReceive_0__2 extends java.lang.Object implements akka.japi.pf.FI$UnitApply
+{
+    test1.Einstein cap0;
+
+    public static akka.japi.pf.FI$UnitApply bootstrap$(test1.Einstein)
+    {
+        test1.Einstein $r0;
+        test1.Einstein$lambda_createReceive_0__2 $r1;
+
+        $r0 := @parameter0: test1.Einstein;
+
+        $r1 = new test1.Einstein$lambda_createReceive_0__2;
+
+        specialinvoke $r1.<test1.Einstein$lambda_createReceive_0__2: void <init>(test1.Einstein)>($r0);
+
+        return $r1;
+    }
+
+    public void <init>(test1.Einstein)
+    {
+        test1.Einstein$lambda_createReceive_0__2 $r0;
+        test1.Einstein $r1;
+
+        $r0 := @this: test1.Einstein$lambda_createReceive_0__2;
+
+        $r1 := @parameter0: test1.Einstein;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<test1.Einstein$lambda_createReceive_0__2: test1.Einstein cap0> = $r1;
+
+        return;
+    }
+
+    public void apply(java.lang.Object)
+    {
+        test1.Einstein$lambda_createReceive_0__2 $r0;
+        java.lang.Object $r1;
+        test1.Darwin$Darwin_msg $r2;
+        test1.Einstein $r3;
+
+        $r0 := @this: test1.Einstein$lambda_createReceive_0__2;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (test1.Darwin$Darwin_msg) $r1;
+
+        $r3 = $r0.<test1.Einstein$lambda_createReceive_0__2: test1.Einstein cap0>;
+
+        virtualinvoke $r3.<test1.Einstein: void lambda$createReceive$0(test1.Darwin$Darwin_msg)>($r2);
+
+        return;
+    }
+}

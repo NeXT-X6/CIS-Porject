@@ -1,0 +1,54 @@
+public final class dltest1.Pong$lambda_createReceive_0__18 extends java.lang.Object implements akka.japi.pf.FI$UnitApply
+{
+    dltest1.Pong cap0;
+
+    public static akka.japi.pf.FI$UnitApply bootstrap$(dltest1.Pong)
+    {
+        dltest1.Pong $r0;
+        dltest1.Pong$lambda_createReceive_0__18 $r1;
+
+        $r0 := @parameter0: dltest1.Pong;
+
+        $r1 = new dltest1.Pong$lambda_createReceive_0__18;
+
+        specialinvoke $r1.<dltest1.Pong$lambda_createReceive_0__18: void <init>(dltest1.Pong)>($r0);
+
+        return $r1;
+    }
+
+    public void <init>(dltest1.Pong)
+    {
+        dltest1.Pong$lambda_createReceive_0__18 $r0;
+        dltest1.Pong $r1;
+
+        $r0 := @this: dltest1.Pong$lambda_createReceive_0__18;
+
+        $r1 := @parameter0: dltest1.Pong;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<dltest1.Pong$lambda_createReceive_0__18: dltest1.Pong cap0> = $r1;
+
+        return;
+    }
+
+    public void apply(java.lang.Object)
+    {
+        dltest1.Pong$lambda_createReceive_0__18 $r0;
+        java.lang.Object $r1;
+        dltest1.Ling$ling_msg $r2;
+        dltest1.Pong $r3;
+
+        $r0 := @this: dltest1.Pong$lambda_createReceive_0__18;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (dltest1.Ling$ling_msg) $r1;
+
+        $r3 = $r0.<dltest1.Pong$lambda_createReceive_0__18: dltest1.Pong cap0>;
+
+        virtualinvoke $r3.<dltest1.Pong: void lambda$createReceive$0(dltest1.Ling$ling_msg)>($r2);
+
+        return;
+    }
+}

@@ -1,0 +1,59 @@
+
+PS D:\cis\program-analysis\project\dltest1> ant                                                                         Buildfile: D:\cis\program-analysis\project\dltest1\build.xml
+
+clean:
+   [delete] Deleting directory D:\cis\program-analysis\project\dltest1\build
+   [delete] Deleting directory D:\cis\program-analysis\project\dltest1\sootOutput
+
+build:
+    [mkdir] Created dir: D:\cis\program-analysis\project\dltest1\build
+    [javac] Compiling 8 source files to D:\cis\program-analysis\project\dltest1\build
+     [echo] Build done
+
+test:
+    [junit] Running test.analysis.dlAnalysisMain
+    [junit] Testsuite: test.analysis.dlAnalysisMain
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.687 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.687 sec
+    [junit]
+    [junit] ------------- Standard Output ---------------
+    [junit] Soot started on Wed Jul 31 20:59:13 CST 2019
+    [junit] analyzing the body of main.java.dltest1.Ping.createReceive
+    [junit] r0 := @this: main.java.dltest1.Ping
+    [junit] $r1 = virtualinvoke r0.<main.java.dltest1.Ping: akka.japi.pf.ReceiveBuilder receiveBuilder()>()
+    [junit] $r2 = staticinvoke <main.java.dltest1.Ping$lambda_createReceive_0__2: akka.japi.pf.FI$UnitApply bootstrap$(main.java.dltest1.Ping)>(r0)
+    [junit] analyzing the body of main.java.dltest1.Pong.createReceive
+    [junit] r0 := @this: main.java.dltest1.Pong
+    [junit] $r1 = virtualinvoke r0.<main.java.dltest1.Pong: akka.japi.pf.ReceiveBuilder receiveBuilder()>()
+    [junit] $r2 = staticinvoke <main.java.dltest1.Pong$lambda_createReceive_0__5: akka.japi.pf.FI$UnitApply bootstrap$(main.java.dltest1.Pong)>(r0)
+    [junit] $r3 = virtualinvoke $r1.<akka.japi.pf.ReceiveBuilder: akka.japi.pf.ReceiveBuilder match(java.lang.Class,akka.japi.pf.FI$UnitApply)>(class "Lmain/java/dltest1/Pong$pong_msg;", $r2)
+    [junit] $r4 = virtualinvoke $r3.<akka.japi.pf.ReceiveBuilder: akka.actor.AbstractActor$Receive build()>()
+    [junit] return $r4
+    [junit] -------------------------------
+    [junit] $r3 = virtualinvoke $r1.<akka.japi.pf.ReceiveBuilder: akka.japi.pf.ReceiveBuilder match(java.lang.Class,akka.japi.pf.FI$UnitApply)>(class "Lmain/java/dltest1/Ping$ping_msg;", $r2)
+    [junit] $r4 = virtualinvoke $r3.<akka.japi.pf.ReceiveBuilder: akka.actor.AbstractActor$Receive build()>()
+    [junit] return $r4
+    [junit] -------------------------------
+    [junit] analyzing the body of main.java.dltest1.Ping.lambda$createReceive$0
+    [junit] r0 := @this: main.java.dltest1.Ping
+    [junit] r1 := @parameter0: main.java.dltest1.Pong$pong_msg
+    [junit] $r2 = virtualinvoke r0.<main.java.dltest1.Ping: akka.actor.ActorRef sender()>()
+    [junit] $r3 = virtualinvoke r0.<main.java.dltest1.Ping: akka.actor.ActorRef getSelf()>()
+    [junit] virtualinvoke $r2.<akka.actor.ActorRef: void tell(java.lang.Object,akka.actor.ActorRef)>("ok", $r3)
+    [junit] return
+    [junit] -------------------------------
+    [junit] analyzing the body of main.java.dltest1.Pong.lambda$createReceive$0
+    [junit] r0 := @this: main.java.dltest1.Pong
+    [junit] r1 := @parameter0: main.java.dltest1.Ping$ping_msg
+    [junit] $r2 = virtualinvoke r0.<main.java.dltest1.Pong: akka.actor.ActorRef sender()>()
+    [junit] $r3 = virtualinvoke r0.<main.java.dltest1.Pong: akka.actor.ActorRef getSelf()>()
+    [junit] virtualinvoke $r2.<akka.actor.ActorRef: void tell(java.lang.Object,akka.actor.ActorRef)>("ok", $r3)
+    [junit] return
+    [junit] -------------------------------
+    [junit] Soot finished on Wed Jul 31 20:59:17 CST 2019
+    [junit] Soot has run for 0 min. 3 sec.
+    [junit] total warnings: 0
+    [junit] ------------- ---------------- ---------------
+
+BUILD SUCCESSFUL
+Total time: 12 seconds

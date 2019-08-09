@@ -1,0 +1,54 @@
+public final class dltest1.Throw$lambda_createReceive_0__2 extends java.lang.Object implements akka.japi.pf.FI$UnitApply
+{
+    dltest1.Throw cap0;
+
+    public static akka.japi.pf.FI$UnitApply bootstrap$(dltest1.Throw)
+    {
+        dltest1.Throw $r0;
+        dltest1.Throw$lambda_createReceive_0__2 $r1;
+
+        $r0 := @parameter0: dltest1.Throw;
+
+        $r1 = new dltest1.Throw$lambda_createReceive_0__2;
+
+        specialinvoke $r1.<dltest1.Throw$lambda_createReceive_0__2: void <init>(dltest1.Throw)>($r0);
+
+        return $r1;
+    }
+
+    public void <init>(dltest1.Throw)
+    {
+        dltest1.Throw$lambda_createReceive_0__2 $r0;
+        dltest1.Throw $r1;
+
+        $r0 := @this: dltest1.Throw$lambda_createReceive_0__2;
+
+        $r1 := @parameter0: dltest1.Throw;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<dltest1.Throw$lambda_createReceive_0__2: dltest1.Throw cap0> = $r1;
+
+        return;
+    }
+
+    public void apply(java.lang.Object)
+    {
+        dltest1.Throw$lambda_createReceive_0__2 $r0;
+        java.lang.Object $r1;
+        dltest1.Catch$catch_msg $r2;
+        dltest1.Throw $r3;
+
+        $r0 := @this: dltest1.Throw$lambda_createReceive_0__2;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (dltest1.Catch$catch_msg) $r1;
+
+        $r3 = $r0.<dltest1.Throw$lambda_createReceive_0__2: dltest1.Throw cap0>;
+
+        virtualinvoke $r3.<dltest1.Throw: void lambda$createReceive$0(dltest1.Catch$catch_msg)>($r2);
+
+        return;
+    }
+}

@@ -1,0 +1,37 @@
+public final class test1.Einstein$lambda_props_ac7cc815_1__1 extends java.lang.Object implements akka.japi.Creator, java.io.Serializable
+{
+
+    public static akka.japi.Creator bootstrap$()
+    {
+        test1.Einstein$lambda_props_ac7cc815_1__1 $r0;
+
+        $r0 = new test1.Einstein$lambda_props_ac7cc815_1__1;
+
+        specialinvoke $r0.<test1.Einstein$lambda_props_ac7cc815_1__1: void <init>()>();
+
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        test1.Einstein$lambda_props_ac7cc815_1__1 $r0;
+
+        $r0 := @this: test1.Einstein$lambda_props_ac7cc815_1__1;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.Object create()
+    {
+        test1.Einstein$lambda_props_ac7cc815_1__1 $r0;
+        test1.Einstein $r1;
+
+        $r0 := @this: test1.Einstein$lambda_props_ac7cc815_1__1;
+
+        $r1 = staticinvoke <test1.Einstein: test1.Einstein lambda$props$ac7cc815$1()>();
+
+        return $r1;
+    }
+}

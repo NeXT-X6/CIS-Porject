@@ -1,0 +1,54 @@
+public final class test1.Celsius$lambda_createReceive_0__23 extends java.lang.Object implements akka.japi.pf.FI$UnitApply
+{
+    test1.Celsius cap0;
+
+    public static akka.japi.pf.FI$UnitApply bootstrap$(test1.Celsius)
+    {
+        test1.Celsius $r0;
+        test1.Celsius$lambda_createReceive_0__23 $r1;
+
+        $r0 := @parameter0: test1.Celsius;
+
+        $r1 = new test1.Celsius$lambda_createReceive_0__23;
+
+        specialinvoke $r1.<test1.Celsius$lambda_createReceive_0__23: void <init>(test1.Celsius)>($r0);
+
+        return $r1;
+    }
+
+    public void <init>(test1.Celsius)
+    {
+        test1.Celsius$lambda_createReceive_0__23 $r0;
+        test1.Celsius $r1;
+
+        $r0 := @this: test1.Celsius$lambda_createReceive_0__23;
+
+        $r1 := @parameter0: test1.Celsius;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<test1.Celsius$lambda_createReceive_0__23: test1.Celsius cap0> = $r1;
+
+        return;
+    }
+
+    public void apply(java.lang.Object)
+    {
+        test1.Celsius$lambda_createReceive_0__23 $r0;
+        java.lang.Object $r1;
+        test1.Darwin$Darwin_msg $r2;
+        test1.Celsius $r3;
+
+        $r0 := @this: test1.Celsius$lambda_createReceive_0__23;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (test1.Darwin$Darwin_msg) $r1;
+
+        $r3 = $r0.<test1.Celsius$lambda_createReceive_0__23: test1.Celsius cap0>;
+
+        virtualinvoke $r3.<test1.Celsius: void lambda$createReceive$0(test1.Darwin$Darwin_msg)>($r2);
+
+        return;
+    }
+}

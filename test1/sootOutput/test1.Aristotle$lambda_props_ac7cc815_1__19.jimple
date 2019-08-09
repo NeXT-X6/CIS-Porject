@@ -1,0 +1,37 @@
+public final class test1.Aristotle$lambda_props_ac7cc815_1__19 extends java.lang.Object implements akka.japi.Creator, java.io.Serializable
+{
+
+    public static akka.japi.Creator bootstrap$()
+    {
+        test1.Aristotle$lambda_props_ac7cc815_1__19 $r0;
+
+        $r0 = new test1.Aristotle$lambda_props_ac7cc815_1__19;
+
+        specialinvoke $r0.<test1.Aristotle$lambda_props_ac7cc815_1__19: void <init>()>();
+
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        test1.Aristotle$lambda_props_ac7cc815_1__19 $r0;
+
+        $r0 := @this: test1.Aristotle$lambda_props_ac7cc815_1__19;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.Object create()
+    {
+        test1.Aristotle$lambda_props_ac7cc815_1__19 $r0;
+        test1.Aristotle $r1;
+
+        $r0 := @this: test1.Aristotle$lambda_props_ac7cc815_1__19;
+
+        $r1 = staticinvoke <test1.Aristotle: test1.Aristotle lambda$props$ac7cc815$1()>();
+
+        return $r1;
+    }
+}

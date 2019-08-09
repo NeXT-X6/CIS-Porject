@@ -1,0 +1,54 @@
+public final class test1.Galileo$lambda_createReceive_0__14 extends java.lang.Object implements akka.japi.pf.FI$UnitApply
+{
+    test1.Galileo cap0;
+
+    public static akka.japi.pf.FI$UnitApply bootstrap$(test1.Galileo)
+    {
+        test1.Galileo $r0;
+        test1.Galileo$lambda_createReceive_0__14 $r1;
+
+        $r0 := @parameter0: test1.Galileo;
+
+        $r1 = new test1.Galileo$lambda_createReceive_0__14;
+
+        specialinvoke $r1.<test1.Galileo$lambda_createReceive_0__14: void <init>(test1.Galileo)>($r0);
+
+        return $r1;
+    }
+
+    public void <init>(test1.Galileo)
+    {
+        test1.Galileo$lambda_createReceive_0__14 $r0;
+        test1.Galileo $r1;
+
+        $r0 := @this: test1.Galileo$lambda_createReceive_0__14;
+
+        $r1 := @parameter0: test1.Galileo;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r0.<test1.Galileo$lambda_createReceive_0__14: test1.Galileo cap0> = $r1;
+
+        return;
+    }
+
+    public void apply(java.lang.Object)
+    {
+        test1.Galileo$lambda_createReceive_0__14 $r0;
+        java.lang.Object $r1;
+        test1.Beethoven$Beethoven_msg $r2;
+        test1.Galileo $r3;
+
+        $r0 := @this: test1.Galileo$lambda_createReceive_0__14;
+
+        $r1 := @parameter0: java.lang.Object;
+
+        $r2 = (test1.Beethoven$Beethoven_msg) $r1;
+
+        $r3 = $r0.<test1.Galileo$lambda_createReceive_0__14: test1.Galileo cap0>;
+
+        virtualinvoke $r3.<test1.Galileo: void lambda$createReceive$0(test1.Beethoven$Beethoven_msg)>($r2);
+
+        return;
+    }
+}

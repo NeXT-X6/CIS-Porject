@@ -1,0 +1,37 @@
+public final class dltest1.Throw2$lambda_props_ac7cc815_1__4 extends java.lang.Object implements akka.japi.Creator, java.io.Serializable
+{
+
+    public static akka.japi.Creator bootstrap$()
+    {
+        dltest1.Throw2$lambda_props_ac7cc815_1__4 $r0;
+
+        $r0 = new dltest1.Throw2$lambda_props_ac7cc815_1__4;
+
+        specialinvoke $r0.<dltest1.Throw2$lambda_props_ac7cc815_1__4: void <init>()>();
+
+        return $r0;
+    }
+
+    public void <init>()
+    {
+        dltest1.Throw2$lambda_props_ac7cc815_1__4 $r0;
+
+        $r0 := @this: dltest1.Throw2$lambda_props_ac7cc815_1__4;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public java.lang.Object create()
+    {
+        dltest1.Throw2$lambda_props_ac7cc815_1__4 $r0;
+        dltest1.Throw2 $r1;
+
+        $r0 := @this: dltest1.Throw2$lambda_props_ac7cc815_1__4;
+
+        $r1 = staticinvoke <dltest1.Throw2: dltest1.Throw2 lambda$props$ac7cc815$1()>();
+
+        return $r1;
+    }
+}
